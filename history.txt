@@ -1,0 +1,43 @@
+   26  mkdir git
+   27  cd git
+   28  git clone https://github.com/gturna/Exam.git
+   29  cp ~/documents/exam/ ~/desktop/git/Exam/
+   30  cp -r ~/documents/exam/ ~/desktop/git/Exam/
+   35  git add *
+   36  git status
+   37  git commit -m "commit erthang"
+   38  git push
+   39  git push origin master
+   49  git branch v2.0
+   50  git branch
+   51  cd ~/desktop/git/Exam/
+   52  git branch
+   53  git branch v2.0
+   54  git checkout v2.0
+   55  git push origin v2.0
+   56  git checkout master
+   58  git add index.html 
+   59  git commit index.html -m "commit index"
+   60  git status
+   61  git push origin master
+   63  git checkout v2.0
+   64  git merge master -m "merging master and v2.0"
+   65  git status
+   66  git push
+   68  git branch v3.0
+   69  git checkout v3.0
+   70  git push
+   71  git status
+   72  git branch
+   73  git push
+   74  git branch
+   75  git push origin v3.0
+   76  git checkout master
+   78  git add index.html 
+   79  git commit index.html -m "commitindex3"
+   80  git push origin master
+   81  git checkout v3.0
+   82  git merge master -m "merging master"
+   83  git push 
+   85  git checkout master
+   88  history | grep "git" > history.txt
